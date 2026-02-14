@@ -1,5 +1,6 @@
 import Timeline from './Timeline';
 import DarkVeil from './DarkVeil';
+import heroImage from '../assets/hero-image.png';
 
 const Home = () => {
     return (
@@ -31,7 +32,7 @@ const Home = () => {
                     {/* Hero Image - Reduced size (approx 40% of previous max-w-4xl) */}
                     <div className="relative w-full max-w-sm mx-auto animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300 group">
                         <img
-                            src="/src/assets/hero-image.png"
+                            src={heroImage}
                             alt="Sushmita Projects Hero"
                             className="relative w-full h-auto object-contain drop-shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]"
                         />

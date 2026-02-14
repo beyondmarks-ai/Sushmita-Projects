@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { FastForward } from 'lucide-react';
+import heroImage from '../assets/hero-image.png';
 
 const greetings = [
     { text: "Welcome", lang: "English" },
@@ -47,7 +48,7 @@ const WelcomeScreen = ({ onComplete }: WelcomeScreenProps) => {
                     transition={{ duration: 1.5, ease: "easeOut" }}
                 >
                     <img
-                        src="/src/assets/hero-image.png"
+                        src={heroImage}
                         alt="Sushmita Projects"
                         className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]"
                     />
